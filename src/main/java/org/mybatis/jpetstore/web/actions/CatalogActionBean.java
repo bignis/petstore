@@ -142,7 +142,7 @@ public class CatalogActionBean extends AbstractActionBean {
   }
 
   public ForwardResolution viewItem() {
-    item = catalogService.getItem(itemId);
+    item = catalogService.getItem(categoryId);
     product = item.getProduct();
     return new ForwardResolution(VIEW_ITEM);
   }
